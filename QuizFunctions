@@ -1,0 +1,135 @@
+
+//reset all variables to the default state
+void resetQuiz() {
+  pianoName = "";
+  pianoClass= "";
+  trumpetName= "";
+  trumpetClass= "";
+  violinName= "";
+  violinClass= "";
+  clarinetName = "";
+  clarinetClass= "";
+  tromboneName= "";
+  tromboneClass= "";
+  dbName= "";
+  dbClass= "";
+  tubaName = "";
+  tubaClass= "";
+  frenchHornName= "";
+  frenchHornClass= "";
+  fluteName= "";
+  fluteClass= "";
+  saxophoneName = "";
+  saxophoneClass= "";
+  timpaniName= "";
+  timpaniClass= "";
+  marimbaName= "";
+  marimbaClass= "";
+  harpName = "";
+  harpClass= "";
+  cymbalsName= "";
+  cymbalsClass= "";
+  guitarName= "";
+  guitarClass= "";
+}
+
+//calculates answers in percent and generates a total
+Integer quizResult() {
+  int score = 0;
+  
+  if (pianoName.equalsIgnoreCase("piano")) {
+    score+=1;
+  }
+  if (pianoClass.equalsIgnoreCase("string") || pianoClass.equalsIgnoreCase("strings")) {
+    score+=1;
+  }
+  if (trumpetName.equalsIgnoreCase("trumpet")) {
+    score+=1;
+  }
+  if (trumpetClass.equalsIgnoreCase("brass")) {
+    score+=1;
+  }
+  if (violinName.equalsIgnoreCase("violin")) {
+    score+=1;
+  }
+  if (violinClass.equalsIgnoreCase("string") || violinClass.equalsIgnoreCase("strings")) {
+    score+=1;
+  }
+  if (clarinetName.equalsIgnoreCase("clarinet")) {
+    score+=1;
+  }
+  if (clarinetClass.equalsIgnoreCase("woodwind")) {
+    score+=1;
+  }
+  if (tromboneName.equalsIgnoreCase("trombone")) {
+    score+=1;
+  }
+  if (tromboneClass.equalsIgnoreCase("brass")) {
+    score+=1;
+  }
+  if (dbName.equalsIgnoreCase("double bass")) {
+    score+=1;
+    
+  }
+  if (dbClass.equalsIgnoreCase("string") || dbClass.equalsIgnoreCase("strings")) {
+    score+=1;
+    
+  }
+  if (tubaName.equalsIgnoreCase("tuba")) {
+    score+=1;
+  }
+  if (tubaClass.equalsIgnoreCase("brass")) {
+    score+=1;
+  }
+  if (frenchHornName.equalsIgnoreCase("french horn")) {
+    score+=1;
+    
+  }
+  if (frenchHornClass.equalsIgnoreCase("brass")) {
+    score+=1;
+    
+  }
+  if (fluteName.equalsIgnoreCase("flute")) {
+    score+=1;
+  }
+  if (fluteClass.equalsIgnoreCase("woodwind")) {
+    score+=1;
+  }
+  if (saxophoneName.equalsIgnoreCase("saxophone")) {
+    score+=1;
+  }
+  if (saxophoneClass.equalsIgnoreCase("woodwind")) {
+    score+=1;
+  }
+  if (timpaniName.equalsIgnoreCase("timpani")) {
+    score+=1;
+  }
+  if (timpaniClass.equalsIgnoreCase("percussion")) {
+    score+=1;
+  }
+  if (marimbaName.equalsIgnoreCase("marimba")) {
+    score+=1;
+  }
+  if (marimbaClass.equalsIgnoreCase("percussion")) {
+    score+=1;
+  }
+  if (harpName.equalsIgnoreCase("harp")) {
+    score+=1;
+  }
+  if (harpClass.equalsIgnoreCase("string") || harpClass.equalsIgnoreCase("strings")) {
+    score+=1;
+  }
+  if (cymbalsName.equalsIgnoreCase("cymbals")) {
+    score+=1;
+  }
+  if (cymbalsClass.equalsIgnoreCase("percussion")) {
+    score+=1;
+  }
+  if (guitarName.equalsIgnoreCase("guitar")) {
+    score+=1;
+  }
+  if (guitarClass.equalsIgnoreCase("string") || guitarClass.equalsIgnoreCase("strings")) {
+    score+=1;
+  }  
+  return score; 
+}
